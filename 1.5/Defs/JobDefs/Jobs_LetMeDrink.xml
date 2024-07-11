@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-    <JobDef>
+    <JobDef DBHThirst="true">
         <defName>AnimalDrinkFromBasin</defName>
         <driverClass>LetMeDrink.JobDrivers.JobDriver_AnimalDrinkFromBasin</driverClass>
         <reportString>drinking water from TargetA</reportString>
