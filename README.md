@@ -8,7 +8,7 @@
 
 ## About
 
-Allow 6 animals to drink from Water Trough at the same time.
+Tired of seeing your animals collapse from dehydration? Frustrated that a big water bowl can only serve one animal at a time? Say goodbye to those woes! With our mod, up to 6 animals can drink from a Water Trough simultaneously. Keep your colony thriving and hydrated!
 
 ## Prerequisites
 Requires Visual Studio with .NET Framework 4.8.0 SDK to compile the assemblies.
