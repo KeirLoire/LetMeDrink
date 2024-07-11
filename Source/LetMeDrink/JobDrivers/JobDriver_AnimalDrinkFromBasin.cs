@@ -30,7 +30,7 @@ namespace LetMeDrink.JobDrivers
             yield return chooseCell;
             yield return Toils_Reserve.Reserve(TargetIndex.B);
             yield return Toils_Goto.GotoThing(TargetIndex.B, PathEndMode.OnCell);
-            Toil toil = ToilMaker.MakeToil("JobDriver_AnimalDrinkFromBasin");
+            Toil toil = ToilMaker.MakeToil("AnimalDrinkFromBasin");
             toil.defaultDuration = 500;
             toil.defaultCompleteMode = ToilCompleteMode.Delay;
             toil.FailOnDestroyedNullOrForbidden(TargetIndex.A);
