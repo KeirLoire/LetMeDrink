@@ -9,11 +9,6 @@ namespace LetMeDrink.Patches
 {
     public static class JobGiver_DrinkWaterPatch
     {
-        static JobGiver_DrinkWaterPatch()
-        {
-            DefOfHelper.EnsureInitializedInCtor(typeof(LetMeDrinkDefOf));
-        }
-
         [HarmonyPatch(typeof(JobGiver_DrinkWater))]
         [HarmonyPatch(nameof(JobGiver_DrinkWater.TryGiveJob))]
         [HarmonyPatch(new Type[] { typeof(Pawn) })]
