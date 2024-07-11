@@ -8,7 +8,7 @@
 
 ## About
 
-Allow 6 animals to drink from Water Trough at the same.
+Allow 6 animals to drink from Water Trough at the same time.
 
 ## Prerequisites
 Requires Visual Studio with .NET Framework 4.8.0 SDK to compile the assemblies.

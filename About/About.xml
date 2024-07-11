@@ -9,7 +9,7 @@
     <supportedVersions>
         <li>1.5</li>
     </supportedVersions>
-    <description>Allow 6 animals to drink from Water Trough at the same.</description>
+    <description>Allow 6 animals to drink from Water Trough at the same time.</description>
     <modDependencies>
         <li>
             <packageId>brrainz.harmony</packageId>
