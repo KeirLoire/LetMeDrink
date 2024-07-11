@@ -18,9 +18,7 @@ namespace LetMeDrink.Patches
         public static void Postfix(ref bool __result, Thing x, Pawn pawn, bool Urgent, float range)
         {
             if (x.def == LetMeDrinkDefOf.WaterTrough && pawn.RaceProps.Animal)
-            {
                 __result = pawn.CanReserve(x, 6, 0);
-            }
 
             // Prevent non-animal pawns from using water troughs
             if (x.def == LetMeDrinkDefOf.WaterTrough && !pawn.RaceProps.Animal)

@@ -3,7 +3,6 @@ using HarmonyLib;
 using Verse.AI;
 using Verse;
 using System;
-using RimWorld;
 
 namespace LetMeDrink.Patches
 {
@@ -26,9 +25,7 @@ namespace LetMeDrink.Patches
                 if (__result.def == DubDef.DBHDrinkFromBasin 
                     && pawn.RaceProps.Animal
                     && __result.targetA.Thing.def != LetMeDrinkDefOf.PetWaterBowl)
-                {
                     __result.def = LetMeDrinkDefOf.AnimalDrinkFromBasin;
-                }
             }
         }
     }
