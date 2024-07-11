@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+    <packageId>KeirLoire.LetMeDrink</packageId>
+    <name>Let Me Drink</name>
+    <author>KeirLoire</author>
+    <url>https://github.com/KeirLoire/LetMeDrink</url>
+    <modIconPath IgnoreIfNoMatchingField="True">About/LetMeDrink_Logo</modIconPath>
+    <modVersion>1.0.1</modVersion>
+    <supportedVersions>
+        <li>1.5</li>
+    </supportedVersions>
+    <description>Allow 6 animals to drink from Water Trough at the same.</description>
+    <modDependencies>
+        <li>
+            <packageId>brrainz.harmony</packageId>
+            <displayName>Harmony</displayName>
+            <steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+            <downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
+        </li>
+        <li>
+            <packageId>Dubwise.DubsBadHygiene</packageId>
+            <displayName>Dubs Bad Hygiene</displayName>
+            <steamWorkshopUrl>steam://url/CommunityFilePage/836308268</steamWorkshopUrl>
+            <downloadUrl>https://github.com/Dubwise56/Dubs-Bad-Hygiene/releases/latest</downloadUrl>
+        </li>
+    </modDependencies>
+    <loadAfter>
+        <li>brrainz.harmony</li>
+        <li>Ludeon.RimWorld</li>
+        <li>Ludeon.RimWorld.Royalty</li>
+        <li>Ludeon.RimWorld.Ideology</li>
+        <li>Ludeon.RimWorld.Biotech</li>
+        <li>Dubwise.DubsBadHygiene</li>
+    </loadAfter>
+</ModMetaData>

@@ -1,0 +1,36 @@
+name: CI/CD
+
+on:
+  push:
+    branches: [main, master]
+    paths-ignore:
+      - README.md
+  pull_request:
+    branches: [main, master]
+    paths-ignore:
+      - README.md
+
+jobs:
+  build:
+    name: Build
+    runs-on: [self-hosted, Windows, X64]
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Restore NuGet packages
+        run: |
+          Set-Location Source
+          nuget restore
+
+      - name: Build assemblies
+        run: msbuild Source\LetMeDrink.sln /p:Configuration=Release
+
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: LetMeDrink
+          path: |
+            1.5
+            About\About.xml
+            About\Preview.png
+            Textures\**\*.png
