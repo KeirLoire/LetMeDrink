@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Verse.AI;
 using Verse;
 using RimWorld;
+using LetMeDrink.Extensions;
 
 namespace LetMeDrink.JobDrivers
 {
@@ -25,11 +26,11 @@ namespace LetMeDrink.JobDrivers
         {
             yield return new Toil().FailOnDestroyedNullOrForbidden(TargetIndex.A);
             yield return new Toil().FailOn(() => (pawn.CurJob.GetTarget(TargetIndex.A).Thing is Building_AssignableFixture building_AssignableFixture && !building_AssignableFixture.Working().Accepted) ? true : false);
-            Toil chooseCell = Toils_Misc.FindRandomAdjacentReachableCell(TargetIndex.A, TargetIndex.B);
+            Toil chooseCell = ToilExtensions.FindReachableAdjacentCellIgnoreError(TargetIndex.A, TargetIndex.B);
             yield return chooseCell;
             yield return Toils_Reserve.Reserve(TargetIndex.B);
             yield return Toils_Goto.GotoThing(TargetIndex.B, PathEndMode.OnCell);
-            Toil toil = ToilMaker.MakeToil("MakeNewToils");
+            Toil toil = ToilMaker.MakeToil("JobDriver_AnimalDrinkFromBasin");
             toil.defaultDuration = 500;
             toil.defaultCompleteMode = ToilCompleteMode.Delay;
             toil.FailOnDestroyedNullOrForbidden(TargetIndex.A);
