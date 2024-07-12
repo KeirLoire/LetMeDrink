@@ -19,7 +19,7 @@ namespace LetMeDrink.Patches
         public static void Postfix(ref bool __result, Thing x, Pawn pawn, bool Urgent, float range)
         {
             if (x.def == LetMeDrinkDefOf.WaterTrough && pawn.RaceProps.Animal)
-                __result = pawn.CanReserveAnyAdjacentCells(x);
+                __result = pawn.CanReserve(x, 6, 0) && pawn.CanReserveAnyAdjacentCells(x);
 
             // Prevent non-animal pawns from using water troughs
             if (x.def == LetMeDrinkDefOf.WaterTrough && !pawn.RaceProps.Animal)
