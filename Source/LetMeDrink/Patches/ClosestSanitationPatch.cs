@@ -13,6 +13,7 @@ namespace LetMeDrink.Patches
         {
             // ClosestSanitation is an internal class in DubsBadHygiene
             var type = AccessTools.TypeByName("DubsBadHygiene.ClosestSanitation");
+            
             return AccessTools.Method(type, "UsableNow");
         }
 
