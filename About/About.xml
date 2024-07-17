@@ -5,7 +5,7 @@
     <author>KeirLoire</author>
     <url>https://github.com/KeirLoire/LetMeDrink</url>
     <modIconPath IgnoreIfNoMatchingField="True">About/LetMeDrink_Logo</modIconPath>
-    <modVersion>1.0.3</modVersion>
+    <modVersion>1.0.4</modVersion>
     <supportedVersions>
         <li>1.4</li>
         <li>1.5</li>
