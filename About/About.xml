@@ -7,6 +7,7 @@
     <modIconPath IgnoreIfNoMatchingField="True">About/LetMeDrink_Logo</modIconPath>
     <modVersion>1.0.3</modVersion>
     <supportedVersions>
+        <li>1.4</li>
         <li>1.5</li>
     </supportedVersions>
     <description>Tired of seeing your animals collapse from dehydration? Frustrated that a big water bowl can only serve one animal at a time? Say goodbye to those woes! With this mod, up to 6 animals can drink from a Water Trough simultaneously. Keep your colony thriving and hydrated!</description>

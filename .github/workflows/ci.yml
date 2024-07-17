@@ -34,3 +34,4 @@ jobs:
             About\About.xml
             About\Preview.png
             Textures\**\*.png
+            LoadFolders.xml
