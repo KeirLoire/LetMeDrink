@@ -19,18 +19,23 @@ jobs:
 
       - name: Restore NuGet packages
         run: |
-          Set-Location Source
-          nuget restore
+          nuget restore 1.5\Source
+          nuget restore 1.6\Source
 
       - name: Build assemblies
-        run: msbuild Source\LetMeDrink.sln /p:Configuration=Release
+        run: |
+          msbuild 1.5\Source\LetMeDrink.sln /p:Configuration=Release
+          msbuild 1.6\Source\LetMeDrink.sln /p:Configuration=Release
 
       - name: Upload artifacts
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: LetMeDrink
           path: |
-            1.5
+            1.5\Assemblies
+            1.5\Defs
+            1.6\Assemblies
+            1.6\Defs
             About\About.xml
             About\Preview.png
             Textures\**\*.png

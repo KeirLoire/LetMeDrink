@@ -5,8 +5,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Krafs.Rimworld.Ref" Version="1.5.4104" />
-    <PackageReference Include="Lib.Harmony" Version="2.3.3" />
+    <PackageReference Include="Krafs.Rimworld.Ref" Version="1.6.4518" />
+    <PackageReference Include="Lib.Harmony" Version="2.3.6" />
   </ItemGroup>
 
   <ItemGroup>
@@ -16,7 +16,7 @@
   </ItemGroup>
 
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">
-    <Copy SourceFiles="$(OutDir)\$(AssemblyName).dll" DestinationFolder="$(ProjectDir)\..\..\1.5\Assemblies\" />
+    <Copy SourceFiles="$(OutDir)\$(AssemblyName).dll" DestinationFolder="$(ProjectDir)\..\..\Assemblies\" />
   </Target>
 
 </Project>
