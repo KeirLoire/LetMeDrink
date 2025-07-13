@@ -32,6 +32,7 @@
         <li>Ludeon.RimWorld.Royalty</li>
         <li>Ludeon.RimWorld.Ideology</li>
         <li>Ludeon.RimWorld.Biotech</li>
+        <li>Ludeon.RimWorld.Odyssey</li>
         <li>Dubwise.DubsBadHygiene</li>
     </loadAfter>
 </ModMetaData>
